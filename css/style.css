@@ -1,0 +1,128 @@
+/*FONTE*/
+
+/*PASSION ONE*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap');
+
+/*sriracha*/
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@700&family=Sriracha&display=swap');
+
+
+*{ /*configuração universal*/
+    padding: 0;
+    margin: 0;
+}
+
+/*VARIAVEL*/
+:root{
+    /*fontes*/
+    --fonte-titulo: 'Passion One', cursive;
+    --fonte-poema: 'Sriracha', cursive;
+    --fonte-padrao: verdana;
+    
+    /*cores*/
+    --branco: #ffffff;
+    --preto: #000000;
+}
+
+
+
+/*cabeçalho*/
+header {
+    background-color: var(--preto);
+    text-align: center;
+}
+
+header h1 {
+    font-family: var(--fonte-titulo);
+    color: var(--branco);
+    padding-top: 50px;
+    font-size: 10vw;/*tamanho da fonte: 10% da largura total da tela*/
+    font-variant: small-caps;/*faz todas letras ficarem mainusculas e deixa a primeira letra maior*/
+}
+
+
+header p {
+    padding-bottom: 50px;
+    color: var(--branco);
+    font-family: var(--fonte-padrao);
+}
+
+
+
+/*todas as sections*/
+section {
+    font-family: var(--fonte-poema);
+    font-size: 3.5vw;/*fonte com 3.5% da largura total da tela.*/
+    line-height: 2em;/*espaçamento das linhas*/
+    padding-bottom: 10vh;/*10% da altura total da tela do navegador*/
+    padding-top: 10vh;/*10% da altura total da tela do navegador*/
+    padding-left: 30px;
+}
+
+
+/*paragrafos das sections*/
+section p {
+    padding-bottom: 2em;
+}
+
+/*section normal: com fundo branco*/
+section.normal {
+    background-color: var(--branco);
+}
+
+
+/*section com imagens de fundo*/
+section.imagem{
+    color: var(--branco);
+    box-shadow: inset 4px 4px 10px 0px rgb(0, 0, 0);
+}
+
+
+
+ /*imagem 1*/
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/*imagem 2*/
+section#img02{ 
+    background-image: url(../imagens/background002.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/*PARAGRAFO DA SECTION IMAGEM*/
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.367);
+    display: inline-block; /*CAIXA SE ADAPTA AO TAMANHO DO CONTEUDO*/
+    padding-left: 5px;
+    padding-right: 5px;
+    text-shadow: 2px 2px 0px var(--preto);
+}
+
+
+/*links*/
+a {
+    font-family: var(--fonte-padrao);
+    font-weight: bolder;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*RODAPÉ*/
+footer {
+    background-color: var(--preto);
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: var(--fonte-padrao);
+}
